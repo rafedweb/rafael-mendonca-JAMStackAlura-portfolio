@@ -1,4 +1,5 @@
 import React from 'react';
+import Text from '../../foundation/Text';
 import { Logo } from './logo';
 import { WrapperCabecalho } from './styles/wrapperCabecalho';
 
@@ -26,8 +27,10 @@ export default function Cabecalho() {
       <WrapperCabecalho.Centro>
       {links.map(function (link) {
           return (
-            <li key={link.url}>             
-                {link.texto}              
+            <li key={link.url}>
+              <Text variant="smallestException" tag="a" href={link.url}>
+                {link.texto}
+              </Text>
             </li>
           )
         })}
