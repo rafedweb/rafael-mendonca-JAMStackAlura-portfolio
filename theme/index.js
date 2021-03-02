@@ -52,6 +52,6 @@ export default {
     xl: 1200, // extra large
   },
   borderRadius: '8px',
-  fontFamily: '\'Rubik\', sans-serif',
+  fontFamily: '\'Fira\', sans-Condensed',
   transition: '200ms ease-in-out',
 }

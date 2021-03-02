@@ -4,6 +4,7 @@ import { Box } from '../../foundation/Box';
 import { Grid } from '../../foundation/Grid';
 import Text from '../../foundation/Text';
 import Cabecalho from '../cabecalho';
+import { Circuito } from '../circuito';
 
 const Title = styled.h1`
   font-size: 50px;
@@ -47,7 +48,7 @@ export default function Capa() {
                 md: 'left',
               }}
             >
-              Olá, Sou Rafael Mendonça.
+              Rafael Mendonça
             </Text>
             <Text
               variant="paragraph1"
@@ -58,7 +59,7 @@ export default function Capa() {
                 md: 'left',
               }}
             >
-              Sou web software engineer, apaixonado por criar softwares excelentes que melhoram a vida das pessoas ao meu redor.
+              Portfolio
             </Text>          
           </Grid.Col>
           <Grid.Col
@@ -67,11 +68,8 @@ export default function Capa() {
               md: 6,
             }}
           >
-            <img
-              alt="Imagem de Rafael de Mendonça "
-              style={{ display: 'block', margin: 'auto', verticalAlign: 'middle', width: 400, borderRadius: 400/ 2 }}
-              src= "/images/avatar.jpg"
-            />
+            <Circuito />
+            
           </Grid.Col>
         </Grid.Row>
       </Grid.Container> 
