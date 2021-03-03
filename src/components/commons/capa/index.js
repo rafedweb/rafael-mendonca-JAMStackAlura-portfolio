@@ -4,7 +4,7 @@ import { Box } from '../../foundation/Box';
 import { Grid } from '../../foundation/Grid';
 import Text from '../../foundation/Text';
 import Cabecalho from '../cabecalho';
-import { Circuito } from '../circuito';
+import { CircuitoBackgroud } from '../circuito-backgroud';
 
 const Title = styled.h1`
   font-size: 50px;
@@ -31,12 +31,16 @@ export default function Capa() {
       >
         <Grid.Row>
         <Grid.Col
-            value={{ xs: 12, md: 5 }}
-            offset={{ xs: 0, md: 1 }}
-            display="flex"
-            alignItems="flex-start"
-            justifyContent="center"
-            flexDirection="column"
+            value={{
+              xs: 12,
+              md: 6,
+            }}
+          >
+            <CircuitoBackgroud />
+            
+          </Grid.Col>
+        <Grid.Col
+            
           >
             <Text
               variant="title"
@@ -68,7 +72,7 @@ export default function Capa() {
               md: 6,
             }}
           >
-            <Circuito />
+            <CircuitoBackgroud />
             
           </Grid.Col>
         </Grid.Row>

@@ -1,44 +1,35 @@
 import React from 'react';
-import styled from 'styled-components';
+import { WrapperRodape } from './styles/WrapperRodape';
 
-const WrapperRodape = styled.footer`
-  padding: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px; 
-  padding-right: 28px;
-  padding-left: 28px;
-  img {
-    width: 58px;
-    margin-right: 23px;
-  }
-  a {   
-    text-decoration: none;
-    transition: .3s;
-    &:hover,
-    &:focus {
-      opacity: .5;
-    }
-  }
-`;
+
 
 export default function Rodape(props) {
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
-    <WrapperRodape {...props}>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo.svg" alt="Logo Alura" />
+    <WrapperRodape {...props}>    
+     <WrapperRodape.Centro>    
+      <a href="https://twitter.com/carifu">
+               <img
+                  alt="Icone do Twitter "
+                  style={{ display: 'block', margin: 14, verticalAlign: 'middle', width: 32, borderRadius: 32/ 2, backgroundColor: '#fff'}}
+                  src= "/images/twitter.png"
+                />
       </a>
-      <p>
-        Orgulhosamente criado durante
-        {' '}
-        o
-        {' '}
-        <a href="https://www.alura.com.br/">
-          <span>Bootcamp Alura JAM Stack</span>
-        </a>
-      </p>
+      <a href="https://github.com/rafedweb"> 
+               <img
+                  alt="Icone do GitHub "
+                  style={{ display: 'block', margin: 14, verticalAlign: 'middle', width: 32, borderRadius: 32/ 2, backgroundColor: '#fff'}}
+                  src= "/images/gitHub.png"
+                /> 
+      </a>        
+      <a href="https://www.linkedin.com/in/rafael-mendon%C3%A7a-31437340/">
+      <img
+                  alt="Icone do linkedIn "
+                  style={{ display: 'block', margin: 14, verticalAlign: 'middle', width: 32, borderRadius: 32/ 2, backgroundColor: '#fff'}}
+                  src= "/images/linkedIn.png"
+                /> 
+        </a>            
+       </WrapperRodape.Centro>    
     </WrapperRodape>
   );
 } 

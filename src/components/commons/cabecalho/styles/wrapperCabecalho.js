@@ -10,39 +10,32 @@ export  const WrapperCabecalho = styled.nav`
   margin-top: 18px;
   padding-left: 28px;
   padding-right: 28px;
+  margin-top: 17px;
+  border-top: 2px solid #E9C46A;
+  background-color: #FFF8E6;
 `;
 
 WrapperCabecalho.Esquerda = styled.div`
-  padding: 0;
+  padding: 0;  
   margin: 0;
   order: 1;
-`;
-
-WrapperCabecalho.Centro = styled.div`
-  padding: 0;
-  margin: 0;
-  order: 3;
-  width: 100%;
+  width: 50%;
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 17px;
-  border-top: 1px solid #88989E;
-  border-bottom: 1px solid #88989E;
-  padding: 12px; 
-
+  justify-content: right;
   a {
     text-align: center;
     display: block;
     text-decoration: none;
-    color: #88989E;
+    background-color: #E9C46A;
+    color: #fff;
     transition: 200ms ease-in-out;  
+    padding-right: 50;
     &:hover,
     &:focus {
       font-weight: 500;
-      color: #070C0E;
-      
+      color: #fff;      
     }
   }
 `;
@@ -53,5 +46,29 @@ WrapperCabecalho.Direita = styled.div`
   display: flex;
   flex: 1;
   order: 2;
-  justify-content: flex-end; 
+  justify-content: space-between;
+`;
+
+WrapperCabecalho.NavBar = styled.div`
+  padding: 0;
+  padding-right: 10%;
+  margin: 0;   
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #88989E;
+    transition: 200ms ease-in-out;  
+    padding-right: 50;
+    &:hover,
+    &:focus {
+      font-weight: 500;
+      color: #070C0E;      
+    }
+  }
 `;

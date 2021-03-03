@@ -1,6 +1,33 @@
 import React from 'react';
+import styled, { css } from 'styled-components';
+
+
+const LogoStyle = styled.div`  
+  padding: 0; 
+  margin: 0;  
+  width: 50%; 
+  display: flex; 
+  justify-content: right;
+  a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: #E9C46A;
+    color: #fff;
+    transition: 200ms ease-in-out;  
+    padding-right: 50;
+    &:hover,
+    &:focus {
+      font-weight: 500;
+      color: #fff;      
+    }
+  }
+ 
+ `;
+
 export function Logo() {
   return (
+    <LogoStyle>
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="70.000000pt" height="37.000000pt" viewBox="0 0 121.000000 70.000000"
  preserveAspectRatio="xMidYMid meet">
@@ -25,5 +52,6 @@ l-32 -1 33 -14z"/>
 l-38 -25 -21 20 c-29 28 -74 34 -113 17z"/>
 </g>
 </svg>
+</LogoStyle>
   );
 }
