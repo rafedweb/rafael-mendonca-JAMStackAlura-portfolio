@@ -1,0 +1,70 @@
+import React from 'react';
+import Text from '../../foundation/Text';
+import { Grid } from '../../foundation/Grid';
+import { Box } from '../../foundation/Box';
+
+
+export default function WrapperProjetos(){
+    return (
+        <Box
+        flex="1"
+        display="flex"
+        flexWrap="wrap"
+        flexDirection="column"
+        justifyContent="space-between"       
+      >     
+  
+        <Grid.Container
+          marginTop={{
+            xs: '32px',
+            md: '75px',
+          }}
+        >
+          <Grid.Row>
+            <Grid.Col
+              value={{ xs: 12, md: 5 }}
+              offset={{ xs: 0, md: 1 }}
+              display="flex"
+              alignItems="flex-start"
+              justifyContent="center"
+              flexDirection="column"
+            >
+              <Text
+                variant="title"
+                tag="h1"
+                color="tertiary.main"
+                // textAlign="right"
+                textAlign={{
+                  xs: 'center',
+                  md: 'left',
+                }}
+              >
+                Meus Projetos
+              </Text>
+              <Text
+                variant="paragraph1"
+                tag="p"
+                color="tertiary.light"
+                textAlign={{
+                  xs: 'center',
+                  md: 'left',
+                }}
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+              </Text>  
+            
+            </Grid.Col>
+            <Grid.Col
+              value={{
+                xs: 12,
+                md: 6,
+              }}
+            >
+            
+            </Grid.Col>
+          </Grid.Row>
+        </Grid.Container>
+      </Box>
+    )
+}

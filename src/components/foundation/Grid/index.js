@@ -9,6 +9,7 @@ const Container = styled.div`
     margin-right: auto;
     margin-left: auto;
     max-width: initial;
+    text-align: center;
     ${breakpointsMedia({
   sm: css`
       max-width: 576px; 

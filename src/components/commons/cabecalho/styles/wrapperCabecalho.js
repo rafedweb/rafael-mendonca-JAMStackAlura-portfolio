@@ -6,11 +6,9 @@ export  const WrapperCabecalho = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 18px;
+  flex-wrap: wrap; 
   padding-left: 28px;
   padding-right: 28px;
-  margin-top: 17px;
   border-top: 2px solid #E9C46A;
   background-color: #FFF8E6;
 `;
