@@ -2,6 +2,7 @@ import React from 'react';
 import Text from '../../foundation/Text';
 import { Grid } from '../../foundation/Grid';
 import { Box } from '../../foundation/Box';
+import Card from '../card';
 
 
 export default function WrapperProjetos(){
@@ -12,24 +13,15 @@ export default function WrapperProjetos(){
         flexWrap="wrap"
         flexDirection="column"
         justifyContent="space-between"       
-      >     
-  
+      >  
         <Grid.Container
           marginTop={{
-            xs: '32px',
-            md: '75px',
+            xs: '0px',
+            md: '1px',
           }}
         >
-          <Grid.Row>
-            <Grid.Col
-              value={{ xs: 12, md: 5 }}
-              offset={{ xs: 0, md: 1 }}
-              display="flex"
-              alignItems="flex-start"
-              justifyContent="center"
-              flexDirection="column"
-            >
-              <Text
+           <Grid.Row>       
+           <Text
                 variant="title"
                 tag="h1"
                 color="tertiary.main"
@@ -40,29 +32,15 @@ export default function WrapperProjetos(){
                 }}
               >
                 Meus Projetos
-              </Text>
-              <Text
-                variant="paragraph1"
-                tag="p"
-                color="tertiary.light"
-                textAlign={{
-                  xs: 'center',
-                  md: 'left',
-                }}
-              >
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
-              </Text>  
-            
-            </Grid.Col>
-            <Grid.Col
-              value={{
-                xs: 12,
-                md: 6,
-              }}
-            >
-            
-            </Grid.Col>
+              </Text>       
+          </Grid.Row>
+          <Grid.Row>             
+              <Card />
+              <Card />
+              <Card />
+          </Grid.Row>
+          <Grid.Row>       
+              <Card />          
           </Grid.Row>
         </Grid.Container>
       </Box>
