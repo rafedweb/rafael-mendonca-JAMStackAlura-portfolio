@@ -14,6 +14,16 @@ export const TextStyleVariantsMap = {
     font-weight: ${({ theme }) => theme.typographyVariants.smallestException.fontWeight};
     line-height: ${({ theme }) => theme.typographyVariants.smallestException.lineHeight};
   `,
+ paragraph2: css`
+    font-size: ${({ theme }) => theme.typographyVariants.paragraph2.fontSize};
+    font-weight: ${({ theme }) => theme.typographyVariants.paragraph2.fontWeight};
+    line-height: ${({ theme }) => theme.typographyVariants.paragraph2.lineHeight};
+  `,
+titleXS: css`
+   font-size: ${({ theme }) => theme.typographyVariants.titleXS.fontSize};
+   font-weight: ${({ theme }) => theme.typographyVariants.titleXS.fontWeight};
+   line-height: ${({ theme }) => theme.typographyVariants.titleXS.lineHeight};
+ `,
 }
 
 
@@ -22,10 +32,10 @@ const TextBase = styled.span`
   ${propToStyle('textAlign')}
   ${propToStyle('marginBottom')}
   ${propToStyle('margin')}
-  /* ${function (props) {
+   ${function (props) {
     console.log('Props, funcao executou')
     return propToStyle('textAlign', props);
-  }} */
+  }} 
   /* ${function(props) {
     return {
       textAlign: props.textAlign,

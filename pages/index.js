@@ -5,12 +5,6 @@ import Rodape from '../src/components/commons/rodape'
 import WrapperProjetos from '../src/components/commons/wrapper-projetos'
 import { Box } from '../src/components/foundation/Box'
 import { Grid } from '../src/components/foundation/Grid'
-import Text from '../src/components/foundation/Text'
-
-const WrapperCapaCabecalho = styled.div`
-    margin-top: -52; 
-    
-`
 
 export default function Home() {
   return (

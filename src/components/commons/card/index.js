@@ -46,9 +46,9 @@ export default function Card(){
     return (
         <WrapperCard>
             <img src="/images/bubbles.svg"/>
-            <div class="overlay">
-               <div class="line"><h2 class="title">Card Title</h2></div>
-               <div class="content">
+            <div className="overlay">
+               <div className="line"><h2 className="title">Card Title</h2></div>
+               <div className="content">
                   <p>Bringing unlocked me an striking ye perceive. Mr by wound hours oh happy. Me in resolution pianoforte continuing we. Most my no spot felt by no. He he in forfeited furniture sweetness he arranging. Me tedious so to behaved written account ferrars moments. </p>
                 </div>
             </div>     
