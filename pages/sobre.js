@@ -13,7 +13,7 @@ export default function PageSobre(){
           flexWrap="wrap"
           flexDirection="column"
           justifyContent="space-between"
-          backgroundImage="url(/images/bubbles.svg)"
+          backgroundImage="url(/images/circuito.svg)"
           backgroundRepeat="no-repeat"
           backgroundPosition="bottom right"
           >    

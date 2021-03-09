@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 
 
 const LogoStyle = styled.div`  
-  padding: 0; 
-  margin: 0;  
-  width: 50%; 
+  padding: 10; 
+  margin: 10;  
+  width: 100%; 
   display: flex; 
   justify-content: right;
   a {
@@ -33,7 +33,7 @@ export function Logo() {
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,70.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="#ffff" stroke="none">
 <path d="M170 601 c-5 -11 -10 -63 -10 -115 0 -82 -3 -98 -20 -114 -19 -18
 -19 -18 0 -35 17 -15 20 -30 20 -113 0 -113 8 -134 53 -134 l32 1 -32 14 -33
 14 0 98 c0 68 -4 105 -14 119 -12 17 -12 22 0 39 10 13 14 49 14 117 l0 99 33

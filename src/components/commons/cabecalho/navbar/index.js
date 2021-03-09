@@ -16,7 +16,7 @@ const links = [
 export default function Navbar() {
   return (    
       
-<WrapperCabecalho.NavBar>
+<>
 {links.map(function (link) {
     return (
       <li key={link.url}>
@@ -26,7 +26,7 @@ export default function Navbar() {
       </li>
     )
   })}
-</WrapperCabecalho.NavBar> 
+</>
          
   )
 }

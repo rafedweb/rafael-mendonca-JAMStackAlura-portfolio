@@ -9,7 +9,7 @@ export const typographyVariants = {
     titleXS: {
       fontSize: '90px',
       fontWeight: '500',
-      lineHeight: 0.1, // 125%
+      lineHeight: 1.0, // 125%
     },  
     // [subTitle]
     subTitle: {
@@ -27,7 +27,7 @@ export const typographyVariants = {
     paragraph2: {
       fontSize: '48px',
       fontWeight: '300',
-      lineHeight: 0.2, // 125%
+      lineHeight: 1.0, // 125%         
     },
     // [smallestException]
     smallestException: {

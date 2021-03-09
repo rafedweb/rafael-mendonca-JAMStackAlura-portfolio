@@ -5,7 +5,6 @@ import Rodape from '../src/components/commons/rodape'
 import WrapperProjetos from '../src/components/commons/wrapper-projetos'
 import { Box } from '../src/components/foundation/Box'
 import { Grid } from '../src/components/foundation/Grid'
-
 export default function Home() {
   return (
     <>
@@ -15,7 +14,7 @@ export default function Home() {
     display="flex"
     flexWrap="wrap"
     flexDirection="column"
-    justifyContent="space-between"  
+    justifyContent="space-between"    
   > 
     <Cabecalho />
      

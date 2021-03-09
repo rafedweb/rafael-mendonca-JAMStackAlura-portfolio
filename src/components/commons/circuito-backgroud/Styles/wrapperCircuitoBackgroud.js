@@ -1,12 +1,15 @@
 import styled, { css } from 'styled-components';
 
 
-export  const WrapperCircuitoBackgroud = styled.svg`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
+export  const WrapperCircuitoBackgroud = styled.div`
+max-width: 500px;
+min-width: 600px;
+max-height: 500px;
+min-width: 600px;
+z-index: -10;
+width: 100%; 
+  position: absolute; 
+  transform: translate(-50%, -50%); 
   .path {
   animation: draw 14s infinite;
   animation-timing-function: linear;
