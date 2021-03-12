@@ -11,7 +11,7 @@ export  const WrapperCabecalho = styled.nav`
   padding-right: 28px;
   border-top: 2px solid #E9C46A;
   background-color: #FFF8E6;   
-
+  max-height: 67px;
 `;
 
 WrapperCabecalho.Esquerda = styled.div`
@@ -40,60 +40,32 @@ WrapperCabecalho.Esquerda = styled.div`
   }
 `;
 
-WrapperCabecalho.Direita = styled.div`
-  padding: 0;
-  margin: 0;
+WrapperCabecalho.Direita = styled.div`  
   display: flex;
   flex: 1;
-  order: 2;
-  justify-content: center;
-  li {
-    text-align: center;
-    display: block;
-    text-decoration: none;  
-    font-size: 28;  
-  }
-   li a {
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    color: #88989E;
-    transition: 200ms ease-in-out;      
-    font-size: 28;
-    &:hover,
-    &:focus {
-      font-weight: 500;
-      color: #070C0E;      
-    }
-  }
+  order: 2;  
+  justify-content: space-around; 
 `;
 
-WrapperCabecalho.NavBar = styled.div`
-  padding: 0;
-  padding-right: 10%;
-  margin: 0;   
+WrapperCabecalho.NavBar = styled.div`     
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-   li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10;
+  justify-content: space-around; 
+  flex: max-content;
+   li {    
+    line-height: 0.1;
   }
-  li a {
-    text-align: center;
-    display: block;
+  li a {    
     text-decoration: none;
-    color: #88989E;
-    transition: 200ms ease-in-out;  
-    padding-right: 50;
-    font-size: 28;
+    color: #000000;
+    transition: 200ms ease-in-out; 
+    font-size: 28px;
+    text-transform: capitalize;
     &:hover,
     &:focus {
       font-weight: 500;
-      color: #070C0E;      
+      color: #88989E;      
     }
   }
 `;

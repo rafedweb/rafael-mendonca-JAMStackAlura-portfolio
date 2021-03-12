@@ -29,7 +29,7 @@ export function Logo() {
   return (
     <LogoStyle>
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="70.000000pt" height="37.000000pt" viewBox="0 0 121.000000 70.000000"
+ width="70.000000pt" height="49.000000pt" viewBox="0 0 121.000000 70.000000"
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,70.000000) scale(0.100000,-0.100000)"

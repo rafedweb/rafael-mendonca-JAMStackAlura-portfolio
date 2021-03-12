@@ -10,7 +10,7 @@ const WrapperCapa = styled.div`
     align-items: center;
     justify-content: center;
     width: 250;
-    height: 100vh; /* Note a medida */ 
+    height: 93vh; /* Note a medida */ 
     padding: 0; 
     .img-backgroud{
       align-items: 'center';
@@ -72,9 +72,7 @@ export default function Capa() {
                   alignItems="flex-end"                  
                   flexDirection="column"
                  > 
-                 <div> 
-                   <CircuitoBackgroud />                   
-                 </div>
+               
                  </Grid.Col>      
            </Grid.Container>         
          </WrapperCapa>    
