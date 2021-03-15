@@ -2,7 +2,7 @@ import React from 'react';
 import Text from '../../foundation/Text';
 import { Grid } from '../../foundation/Grid';
 import { Box } from '../../foundation/Box';
-import Card from '../card';
+import Card from '../projeto';
 
 
 export default function WrapperProjetos(){
@@ -16,31 +16,57 @@ export default function WrapperProjetos(){
       >  
         <Grid.Container
           marginTop={{
-            xs: '0px',
-            md: '1px',
+            xs: '-10px',
+            md: '-10px',
           }}
         >
-           <Grid.Row>       
+           <Grid.Row          
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            flexDirection="row"
+            textAlign={{
+              xs: 'center',
+              md: 'center',
+            }}>       
            <Text
                 variant="title"
                 tag="h1"
                 color="tertiary.main"
-                // textAlign="right"
+                 textAlign="center"
                 textAlign={{
                   xs: 'center',
-                  md: 'left',
+                  md: 'center',
                 }}
               >
                 Meus Projetos
               </Text>       
           </Grid.Row>
           <Grid.Row>             
-              <Card />
-              <Card />
-              <Card />
+              <Card              
+              width="30%"          
+              backgroundImage="url(/images/bubbles.svg)"
+              backgroundRepeat="no-repeat"
+              backgroundPosition="center">
+              </Card>
+              <Card              
+                width="30%"            
+                backgroundImage="url(/images/bubbles.svg)"
+                backgroundRepeat="no-repeat"
+                backgroundPosition="center"/>
+              <Card               
+                width="30%"             
+                backgroundImage="url(/images/bubbles.svg)"
+                backgroundRepeat="no-repeat"
+                backgroundPosition="center"/>
           </Grid.Row>
           <Grid.Row>       
-              <Card />          
+          <Card             
+              width="100%"         
+              backgroundImage="url(/images/bubbles.svg)"
+              backgroudnRepeat="no-repeat"
+              backgroundPosition="center"
+              />        
           </Grid.Row>
         </Grid.Container>
       </Box>

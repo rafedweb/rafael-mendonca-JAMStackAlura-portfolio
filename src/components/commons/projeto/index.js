@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-
+import {Card} from '../../foundation/card'
 
 const WrapperCard = styled.div` 
   position: relative;
@@ -40,11 +40,15 @@ img{
  .overlay .line{width: 100%; text-align: left;line-height: 50px; padding:0em 1em;}
  .overlay .content{text-align: left;padding: 1em;}       
 `
-WrapperCard.Img
 
-export default function Card(){
-    return (
-        <WrapperCard>
+
+export default function Projeto(props){  
+    return (      
+      <Card              
+      width={props.width}         
+      backgroundImage="url(/images/bubbles.svg)"
+      backgroundRepeat="no-repeat"
+      backgroundPosition="center">
             <img src="/images/bubbles.svg"/>
             <div className="overlay">
                <div className="line"><h2 className="title">Card Title</h2></div>
@@ -52,6 +56,6 @@ export default function Card(){
                   <p>Bringing unlocked me an striking ye perceive. Mr by wound hours oh happy. Me in resolution pianoforte continuing we. Most my no spot felt by no. He he in forfeited furniture sweetness he arranging. Me tedious so to behaved written account ferrars moments. </p>
                 </div>
             </div>     
-        </WrapperCard>
+        </Card>
     )
 }
