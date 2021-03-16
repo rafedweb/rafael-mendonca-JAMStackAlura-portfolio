@@ -1,42 +1,50 @@
 import styled from 'styled-components';
 import { propToStyle } from '../../../../theme/utils/propToStyle';
 
-// eslint-disable-next-line import/prefer-default-export
 export const Card = styled.div`
   position: relative;
-  display:inline-block;
-  height: 400px;
-  margin: 3em 1em;
+  display:flex;
+  //flex-direction: column-reverse;
+  margin: 1em 1em;
   border: 1px solid #E9C46A;
-  overflow: hidden;  
+  overflow: hidden; 
+  ${propToStyle('flexDirection')}  
+  ${propToStyle('height')}  
   ${propToStyle('width')}
-  background-image: 'url(/images/bubbles.svg)';
-  background-Repeat: 'no-repeat';
-  background-Position: 'center';
-  /*${propToStyle('backgroundImage')}
-  //${propToStyle('backgroundRepeat')}
-  //${propToStyle('backgroundPosition')}*/
   box-shadow: rgba(6, 33, 63, 0.129412) 0px 1px 2px 0px;
-  -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s;
 
-img{
-  position: absolute;
-  top:50%;
-  left:50%;
-  -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%,-50%);
-  -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s;transition: 0.5s;
-}
 &:hover,
 &:focus img{top:30%;opacity: 0.5;}
 
-.Card .overlay{
-  position: absolute;
-  bottom:calc(-80% + 50px);
+.card-body{
+  position: inherit;
+  //${propToStyle('position')} 
+  width: 100%;
+  height: 100%;  
+}
+.card-img{
+  position: absolute;  
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+}
+.card-img img {   
+  width: 100%;
+  height: 100%; 
+}
+.card-Title{
+  //position: absolute; 
+  ${propToStyle('position')} 
+  width: 100%;
+  height: 15%;
+  background: #FFF; 
+}
+.Card  .overlay{
+  position: absolute; 
   left: 0px;
   width: 100%;
   height: 80%;
-  background: #FFF;
-  -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s;
+  background: #FFF; 
 }
 &:hover,
 &:focus .overlay{bottom:0px;}
