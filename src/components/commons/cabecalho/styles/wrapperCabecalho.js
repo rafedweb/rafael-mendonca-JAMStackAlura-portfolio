@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../../../theme/utils/breakpointsMedia'
 
 export  const WrapperCabecalho = styled.nav`
+  position: sticky;
+  top: 0;
   font-family: 'Rubik', sans-serif;
   display: flex;
   align-items: center;

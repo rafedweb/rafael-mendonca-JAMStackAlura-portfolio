@@ -1,16 +1,37 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { propToStyle } from '../../../../theme/utils/propToStyle';
+import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
 
 export const Card = styled.div`
   position: relative;
-  display:flex;
+  display:flex;  
   //flex-direction: column-reverse;
-  margin: 1em 1em;
+  margin: 0.4em 0.4em;
   border: 1px solid #E9C46A;
   overflow: hidden; 
+  //${propToStyle('order')}  
   ${propToStyle('flexDirection')}  
   ${propToStyle('height')}  
   ${propToStyle('width')}
+  ${propToStyle('flexShrink')}
+  ${propToStyle('flexGrow')}
+  ${breakpointsMedia({
+  xs: css`
+      width: 100%; 
+    `,
+  sm: css`
+      width: 100%; 
+    `,
+  md: css`
+      width: 30%;     
+    `,
+  lg: css`
+      width: 30%; 
+    `,
+  xl: css`
+      width: 30%;
+    `,
+})}
   box-shadow: rgba(6, 33, 63, 0.129412) 0px 1px 2px 0px;
 
 &:hover,

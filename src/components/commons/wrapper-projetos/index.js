@@ -2,7 +2,7 @@ import React from 'react';
 import Text from '../../foundation/Text';
 import { Grid } from '../../foundation/Grid';
 import { Box } from '../../foundation/Box';
-import Card from '../projeto';
+import Card from '../card';
 
 
 export default function WrapperProjetos(){
@@ -20,15 +20,7 @@ export default function WrapperProjetos(){
             md: '-10px',
           }}
         >
-           <Grid.Row          
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            flexDirection="row"
-            textAlign={{
-              xs: 'center',
-              md: 'center',
-            }}>       
+           <>       
            <Text
                 variant="title"
                 tag="h1"
@@ -41,9 +33,11 @@ export default function WrapperProjetos(){
               >
                 Meus Projetos
               </Text>       
-          </Grid.Row>
+          </>
           <Grid.Row>             
-              <Card 
+              <Card               
+              flexGrow="1"
+              flexShrink="0"
               position="absolute"
               flexDirection= "column-reverse"             
               height="510px"         
@@ -51,31 +45,36 @@ export default function WrapperProjetos(){
               img="/images/sobre.jpg"
               content="">
               </Card>
-              <Card 
+              <Card              
+                flexGrow="1"
+                flexShrink="0"
                 position="absolute"
                 flexDirection= "column-reverse"              
                 height="510px"            
                 width="30%"               
                 img ="/images/bubbles.svg"
                 content=""/>                
-              <Card 
+              <Card               
+                flexGrow="1"
+                flexShrink="0"
                 position="absolute"
                 flexDirection= "column-reverse"               
                 height="510px"             
                 width="30%"                
                 img="/images/avatar.jpg"
                 content=""/>
-          </Grid.Row>
-          <Grid.Row>       
-          <Card 
+          <Card              
+              flexGrow="10"
+              flexShrink="0"
               position="inherit"
               flexDirection= "row"             
-              height="320px"         
+              height="320px !important"         
               width="95%"            
               img="/images/bubbles.svg"
               content= "Bringing unlocked me an striking ye perceive. Mr by wound hours oh happy. Me in resolution pianoforte continuing we. Most my no spot felt by no. He he in forfeited furniture sweetness he arranging. Me tedious so to behaved written account ferrars moments."
               />        
           </Grid.Row>
+         
         </Grid.Container>
       </Box>
     )

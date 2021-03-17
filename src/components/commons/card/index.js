@@ -4,11 +4,14 @@ import {Card} from '../../foundation/card'
 
 export default function Projeto(props){  
     return (      
-      <Card              
+      <Card  
+      order={props.order}            
       width={props.width}
       height={props.height} 
       flexDirection ={props.flexDirection} 
-      position ={props.position}       
+      position ={props.position} 
+      flexShrink ={props.flexShrink} 
+      flexGrow ={props.flexGrow}  
       >
         <div className="card-body">
           <div className="card-img">
