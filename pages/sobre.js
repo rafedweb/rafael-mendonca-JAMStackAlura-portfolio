@@ -12,10 +12,7 @@ export default function PageSobre(){
           display="flex"
           flexWrap="wrap"
           flexDirection="column"
-          justifyContent="space-between"
-          backgroundImage="url(/images/circuito.svg)"
-          backgroundRepeat="no-repeat"
-          backgroundPosition="bottom right"
+          justifyContent="space-between"         
           >    
           <Cabecalho />            
              <Grid.Container
