@@ -14,19 +14,18 @@ const links = [
 ]
 
 export default function Navbar() {
-  return (    
-      
-<WrapperCabecalho.NavBar>
-{links.map(function (link) {
-    return (
-      <li key={link.url}>
-        <Text variant="smallestException" tag="a" href={link.url}>
-          {link.texto}
-        </Text>
-      </li>
-    )
-  })}
-</WrapperCabecalho.NavBar>
+  return (       
+           <WrapperCabecalho.NavBar>
+              {links.map(function (link) {
+                          return (
+                                   <li key={link.url}>
+                                        <Text variant="smallestException" tag="a" href={link.url}>
+                                             {link.texto}
+                                        </Text>
+                                   </li>
+                                )
+                })}
+           </WrapperCabecalho.NavBar>
          
-  )
+         )
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import Text from '../../foundation/Text';
 import { Logo } from './logo';
 import Navbar from './navbar';
 import { WrapperCabecalho } from './styles/wrapperCabecalho';
