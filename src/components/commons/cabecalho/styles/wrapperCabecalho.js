@@ -4,6 +4,7 @@ import { breakpointsMedia } from '../../../../../theme/utils/breakpointsMedia'
 export  const WrapperCabecalho = styled.nav`
   position: sticky;
   top: 0;
+  z-index: 90;
   font-family: 'Rubik', sans-serif;
   display: flex;
   align-items: center;
