@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import { breakpointsMedia } from '../../../../../theme/utils/breakpointsMedia'
+import styled from 'styled-components';
+
 
 export  const WrapperCabecalho = styled.nav`
   position: sticky;

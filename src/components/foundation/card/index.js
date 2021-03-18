@@ -5,7 +5,6 @@ import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
 export const Card = styled.div`
   position: relative;
   display:flex;  
-  //flex-direction: column-reverse;
   margin: 0.8em 0.4em;
   border: 1px solid #E9C46A;
   overflow: hidden; 

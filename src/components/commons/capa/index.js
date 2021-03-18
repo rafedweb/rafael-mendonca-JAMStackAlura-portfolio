@@ -9,7 +9,7 @@ const WrapperCapa = styled.div`
     align-items: center;
     justify-content: center;
     width: 250;
-    height: 93vh; /* Note a medida */ 
+    height: 93vh;
     padding: 0;
     background-image: url(/images/Programming.svg);   
     background-repeat: no-repeat;
