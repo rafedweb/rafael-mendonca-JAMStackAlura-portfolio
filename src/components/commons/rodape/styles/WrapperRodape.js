@@ -7,11 +7,12 @@ export const WrapperRodape = styled.footer`
   justify-content: center; 
   background-color: #FFF8E6;
   line-height: 4.3;
+  margin-top: 40px;
 `;
 
 WrapperRodape.Centro = styled.div` 
   margin-left: 14;
-  margin-right: 14;
+  margin-right: 14;  
   list-style: none;
   display: flex;
   align-items: center;

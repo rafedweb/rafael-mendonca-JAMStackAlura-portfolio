@@ -1,9 +1,8 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import { Grid } from '../../foundation/Grid';
 import Text from '../../foundation/Text';
-import {CircuitoBackgroud} from '../circuito-backgroud'
-
+import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
 
 const WrapperCapa = styled.div`
     display: flex;
@@ -15,12 +14,24 @@ const WrapperCapa = styled.div`
     background-image: url(/images/Programming.svg);   
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 35%;
-    .img-backgroud{
-      align-items: 'center';
-      height: 600;
-    }   
-             
+    background-size: 12em;
+    ${breakpointsMedia({
+      xm: css`
+          background-size: 10em;
+        `,
+     sm: css`
+          background-size: 15em;
+        `,
+     md: css`
+         background-size: 25em;
+        `,
+     lg: css`
+          background-size: 30em;
+         `,
+     xl: css`
+          background-size: 35em;
+        `,
+    })}             
 `
 
 export default function Capa() {
@@ -61,6 +72,7 @@ export default function Capa() {
                     variant="paragraph2"
                     tag="p"
                     color="tertiary.light"
+                    marginTop="-48px"
                     textAlign={{
                     xs: 'center',
                     md: 'center',

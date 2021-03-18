@@ -18,11 +18,7 @@ export default function Home() {
   > 
     <Cabecalho />
      
-    <Grid.Container
-      marginTop={{
-        xs: '32px',
-        md: '75px',
-      }}
+    <Grid.Container    
     >
       <WrapperProjetos />
      

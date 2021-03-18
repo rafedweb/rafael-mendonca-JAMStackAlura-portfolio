@@ -14,12 +14,7 @@ export default function WrapperProjetos(){
         flexDirection="column"
         justifyContent="space-between"       
       >  
-        <Grid.Container
-          marginTop={{
-            xs: '-10px',
-            md: '-10px',
-          }}
-        >
+        <Grid.Container >
            <>       
            <Text
                 variant="title"
@@ -35,26 +30,55 @@ export default function WrapperProjetos(){
               </Text>       
           </>
           <Grid.Row>             
-              <Card               
+              <Card 
+              order="3" 
+              order={{
+                xs: '4',
+                sm: '4',
+              }}             
               flexGrow="1"
               flexShrink="0"
               position="absolute"
               flexDirection= "column-reverse"             
               height="510px"         
               width="30%"             
-              img="/images/sobre.jpg"
+              img="/images/bubbles.svg"
               content="">
               </Card>
-              <Card              
+              <Card 
+                order="initial"                
+                order={{
+                  xs: '4',
+                  sm: '4',
+                  md: 'initial',
+                  lg: 'initial', 
+                  xl: 'initial', 
+                }}               
                 flexGrow="1"
                 flexShrink="0"
                 position="absolute"
                 flexDirection= "column-reverse"              
                 height="510px"            
                 width="30%"               
-                img ="/images/bubbles.svg"
+                img ="/images/sobre.jpg"
                 content=""/>                
-              <Card               
+              <Card 
+                order="2"                
+                order={{
+                  xs: '2',
+                  sm: '2',
+                  md: '2',
+                  lg: '2', 
+                  xl: '2', 
+                }} 
+                order="3"
+                order={{
+                  xs: '3',
+                  sm: '3',
+                  md: '3',
+                  lg: '3', 
+                  xl: '3', 
+                }}                
                 flexGrow="1"
                 flexShrink="0"
                 position="absolute"
@@ -63,7 +87,15 @@ export default function WrapperProjetos(){
                 width="30%"                
                 img="/images/avatar.jpg"
                 content=""/>
-          <Card              
+          <Card  
+              order="4"
+              order={{
+                xs: 'initial',
+                sm: 'initial',
+                md: '4',
+                lg: '4', 
+                xl: '4', 
+              }}             
               flexGrow="10"
               flexShrink="0"
               position="inherit"

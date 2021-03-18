@@ -32,6 +32,7 @@ const TextBase = styled.span`
   ${propToStyle('textAlign')}
   ${propToStyle('marginBottom')}
   ${propToStyle('margin')}
+  ${propToStyle('marginTop')}
   /* ${function (props) {
     console.log('Props, funcao executou')
     return propToStyle('textAlign', props);
